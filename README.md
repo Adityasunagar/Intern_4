@@ -93,6 +93,20 @@ Install requirements using:
 
 
 
+### Simple Explaination of Sigmoid function
+Logistic regression is named for its core function, the sigmoid (or logistic) function. This function takes any real-valued number and "squashes" it into a value between 0 and 1.
+
+The formula is:
+                $$S(z) = \frac{1}{1 + e^{-z}}$$
+
+
+1. z is the linear combination of your features and the model's learned coefficients (e.g., $z = w_1x_1 + w_2x_2 + ... + b$).
+2. The output, $S(z)$, is interpreted as the probability that a given sample belongs to the positive class (in our case, 'Malignant').
+3. If $S(z) \ge 0.5$, the model predicts class 1.
+4. If $S(z) < 0.5$, the model predicts class 0.
+
+
+
 ---
 
 ## Conclusion
